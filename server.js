@@ -9,8 +9,11 @@ app.get('/user/:id', function (req, res, next) {
 app.get('/user/:id', function (req, res, next) {
     console.log('handling request');
     res.sendStatus(200);
-    next();
-});
+     next('route');  // bypass remaining route callbacks
+    }, function (req, res, next){
+        console.log('next middleware');
+        next();
+    });
 
 app.get('/user/:id', function (req, res, next) {
     console.log('after request handler');
