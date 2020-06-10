@@ -1,6 +1,9 @@
 var express = require('express');
 var app = express();
 
+let port = (process.env.PORT || '9000');
+ 
+
 app.get('/user/:id', function (req, res, next) {
     console.log('before request handler');
     next();
@@ -20,6 +23,6 @@ app.get('/user/:id', function (req, res, next) {
     next();
 });
 
-app.listen(3000, function () {
+app.listen(port, function () {
     console.log('Example app listening on port 3000!')
 });
