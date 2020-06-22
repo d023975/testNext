@@ -1,11 +1,9 @@
 ---
 applications:
-- name: dummyC53sfsfs
+- name: dummyC53sfsfs22
   memory: 256M
   instances: 1
   timeout: 180
-  buildpack: https://github.com/cloudfoundry/nodejs-buildpack.git#v1.6.41
-  stack: cflinuxfs3
   command: npm start
   services:
     #XSUAA
