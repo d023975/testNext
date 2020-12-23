@@ -1,13 +1,16 @@
 ---
 applications:
 - name: dummyC53sfsfs22
+  routes:
+  - route: dummyc53sfddsfs22-provider-b.cfapps.eu10.hana.ondemand.com
   memory: 256M
   instances: 1
   timeout: 180
   command: npm start
-  services:
-    #XSUAA
-    - PaPM-conn
-    - PaPM-hana
-    - PaPM-rdl
-
+  # services:
+  #   #XSUAA
+  #   - PaPM-conn
+  #   - PaPM-hana
+  #   - PaPM-rdl
+  env:
+    BITBUCKET_COMMIT: 4d8f191a7953111d6fe13d2f3347521d62cfdefa
