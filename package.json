@@ -14,10 +14,12 @@
   "author": "rb",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "@dynatrace/oneagent": "1.209.170-1.0.0",
+    "@dynatrace/oneagent-sdk": "^1.4.1",
+    "express": "4.16.1"
   },
   "engines": {
-    "node": "12.16.1",
-    "npm": "6.13.4"
+    "node": "16.4.1",
+    "npm": "7.4.3"
   }
 }

@@ -1,13 +1,12 @@
 ---
 applications:
-- name: dummyC53sfsfs22
+- name: sap-papm-test-dynatrace
+  buildpacks: [https://github.com/cloudfoundry/nodejs-buildpack]
   memory: 256M
   instances: 1
   timeout: 180
   command: npm start
   services:
-    #XSUAA
-    - PaPM-conn
-    - PaPM-hana
-    - PaPM-rdl
+    - dynatrace-service02
+    - applogs-papm-standard
 

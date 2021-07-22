@@ -1,0 +1,15 @@
+{
+  "environment_name": "PRODDEVPAPM01",
+  "service_parameters": {
+    "skiperrors":"true"
+  },
+  "permission_assignments": [
+    { "name": "PAPMCloud Admin",
+      "roles": ["admin","log_analytics"]
+    },
+    {
+      "name": "PAPMCloud User",
+      "roles": ["user","log_analytics"]
+    }
+  ]
+}
